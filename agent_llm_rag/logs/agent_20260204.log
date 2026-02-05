@@ -1,0 +1,32 @@
+2026-02-04 11:17:17,855 - agent - INFO - logger_handler.py:56 - 信息日志
+2026-02-04 11:17:17,855 - agent - ERROR - logger_handler.py:57 - 错误日志
+2026-02-04 11:17:17,855 - agent - WARNING - logger_handler.py:58 - 警告日志
+2026-02-04 11:17:17,855 - agent - DEBUG - logger_handler.py:59 - 调试日志
+2026-02-04 17:59:02,803 - agent - ERROR - vector_store.py:98 - [加载知识库]D:\demo\agent\data\扫地机器人100问.pdf内容加载失败:'PyPDFLoader' object has no attribute 'laod'
+Traceback (most recent call last):
+  File "D:\demo\agent\rag\vector_store.py", line 77, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\demo\agent\rag\vector_store.py", line 59, in get_file_documents
+    return pdf_loder(read_path)
+  File "D:\demo\agent\utils\file_handler.py", line 54, in pdf_loder
+    return PyPDFLoader(filepath, passwd).laod()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PyPDFLoader' object has no attribute 'laod'
+2026-02-04 17:59:07,969 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\扫地机器人100问2.txt内容加载成功
+2026-02-04 17:59:13,359 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\扫拖一体机器人100问.txt内容加载成功
+2026-02-04 17:59:23,129 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\故障排除.txt内容加载成功
+2026-02-04 17:59:28,915 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\维护保养.txt内容加载成功
+2026-02-04 17:59:34,780 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\选购指南.txt内容加载成功
+2026-02-04 18:00:28,597 - agent - INFO - vector_store.py:95 - [加载知识库]D:\demo\agent\data\扫地机器人100问.pdf内容加载成功
+2026-02-04 18:00:28,614 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\扫地机器人100问2.txt内容已经存在知识库内，跳过
+2026-02-04 18:00:28,615 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\扫拖一体机器人100问.txt内容已经存在知识库内，跳过
+2026-02-04 18:00:28,615 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\故障排除.txt内容已经存在知识库内，跳过
+2026-02-04 18:00:28,615 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\维护保养.txt内容已经存在知识库内，跳过
+2026-02-04 18:00:28,615 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\选购指南.txt内容已经存在知识库内，跳过
+2026-02-04 18:01:44,817 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\扫地机器人100问.pdf内容已经存在知识库内，跳过
+2026-02-04 18:01:44,817 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\扫地机器人100问2.txt内容已经存在知识库内，跳过
+2026-02-04 18:01:44,817 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\扫拖一体机器人100问.txt内容已经存在知识库内，跳过
+2026-02-04 18:01:44,818 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\故障排除.txt内容已经存在知识库内，跳过
+2026-02-04 18:01:44,818 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\维护保养.txt内容已经存在知识库内，跳过
+2026-02-04 18:01:44,818 - agent - INFO - vector_store.py:73 - [加载知识库]D:\demo\agent\data\选购指南.txt内容已经存在知识库内，跳过
